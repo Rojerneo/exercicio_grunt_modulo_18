@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "grunt": "^1.6.1"
+    "grunt": "^1.6.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-replace": "^2.0.2"
   },
   "name": "exercicio_grunt",
   "version": "1.0.0",
@@ -39,6 +41,8 @@
     "global-modules": "^1.0.0",
     "global-prefix": "^1.0.2",
     "grunt-cli": "^1.4.3",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-less": "^3.0.0",
     "grunt-known-options": "^2.0.0",
     "grunt-legacy-log": "^3.0.0",
     "grunt-legacy-log-utils": "^2.1.0",
@@ -102,6 +106,8 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
+    "grunt": "grunt",
+    "build": "grunt build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

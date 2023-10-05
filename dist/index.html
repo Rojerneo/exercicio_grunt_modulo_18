@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se e participe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cadastre-se e participe do sorteio</h1>
+        <form id="form-cadastro">
+            <div>
+                <label class="label-form" for="nome">Nome:</label>
+                <input id="nome" type="text" required>
+                <label class="label-form for="email">E-mail:</label>
+                <input id="email" type="email" required>
+                <button type="submit">Enviar e participar</button>
+            </div>
+        </form>
+        <div class="sorteio">
+            <button id="sortear" type="button">Sortear</button>
+            <p id="resultado-negativo"><img src="icons/frown.svg" alt="">Que pena, não foi dessa vez!</p>
+            <p id="resultado-positivo"><img src="icons/smile.svg" alt="">Parabéns, você ganhou <img src="icons/gift.svg" alt=""> <span id="premio"></span>!</p>
+        </div>
+        teste
+    </main>
+</body>
+</html>
