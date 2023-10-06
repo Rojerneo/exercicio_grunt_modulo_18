@@ -61,6 +61,6 @@ button:hover {
   font-size: 1.5em;
   padding: 16px 0;
 }
-.sorteio img {
+.sorteio .material-symbols-outlined {
   margin: 0 8px;
 }

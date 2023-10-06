@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
     <link rel="stylesheet" href="@@ENDERECO_CSS">
 </head>
 <body>
@@ -22,10 +25,11 @@
             </div>
         </form>
         <div class="sorteio">
-            <button id="sortear" type="button">Sortear</button>
-            <p id="resultado-negativo"><img src="icons/frown.svg" alt="">Que pena, não foi dessa vez!</p>
-            <p id="resultado-positivo"><img src="icons/smile.svg" alt="">Parabéns, você ganhou <img src="icons/gift.svg" alt=""> <span id="premio"></span>!</p>
+            <button id="sortear" type="button">Participar do Sorteio</button>
+            <p id="resultado-negativo"><span class="material-symbols-outlined">sentiment_sad</span>Que pena, não foi dessa vez!</p>
+            <p id="resultado-positivo"><span class="material-symbols-outlined">mood</span>Parabéns, você ganhou <span class="material-symbols-outlined">redeem</span><span id="premio"></span>!</p>
         </div>
     </main>
+    <script src="@@ENDERECO_JS"></script>
 </body>
 </html>
