@@ -21,6 +21,7 @@ body {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 24px;
 
     h1 {
         font-family: @fontTitulos;
@@ -36,7 +37,7 @@ body {
 }
 
 #form-cadastro {
-    width: 600px;
+    max-width: 100%;
     margin: 0 auto;
 
     label, input {
@@ -74,7 +75,8 @@ button {
 }
 
 .sorteio {
-    // display: none;
+    display: none;
+    margin-top: 24px;
     p {
         font-size: 1.5em;
         padding: 16px 0;
@@ -83,9 +85,29 @@ button {
         margin: 0 8px;
     };
     #resultado-negativo {
-        // display: none;
+        display: none;
     };
     #resultado-positivo {
-        // display: none;
+        display: none;
+    }
+    #btn-confirmar {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 90%;
+        padding: 0;
+
+        h1 {
+            font-size: 2em;
+        }
+    }
+
+    .sorteio {
+        p {
+            font-size: 1em;
+        }
     }
 }

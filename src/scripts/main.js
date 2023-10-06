@@ -1,23 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('form-cadastro').addEventListener('submit', function(e) {
-    document.querySelector('.sorteio').style.display = 'block'
+
+    let form = document.getElementById('form-cadastro')
+    let mostrarSorteio = document.querySelector('.sorteio')
+    let resPos = document.getElementById('resultado-positivo')
+    let resNeg = document.getElementById('resultado-negativo')
+    let premio = document.getElementById('premio')
+    let btnSortear = document.getElementById('sortear')
+    let btnConfirmar = document.getElementById('btn-confirmar')
+    let gerarNumero = Math.floor(Math.random() * 10)
+
+    form.addEventListener('submit', function(e) {
+        mostrarSorteio.style.display = 'block'
         e.preventDefault();
     })
 
-    function gerarNumero() {
-        return Math.floor(Math.random() * 100);
-    }
-
-    // function resultadoSorteio() {
-    //     let premiadoNaoPremiado = gerarNumero() % 2;
-    //     return premiadoNaoPremiado
-    // }
-
-    document.getElementById('sortear').addEventListener('click', function() {
-        if (gerarNumero() <= 50) {
-            alert('Você ganhou')
+    btnSortear.addEventListener('click', function() {
+        if (gerarNumero < 4) {
+            resPos.style.display = 'block'
+            premio.innerText = '5% de desconto na sua próxima compra,'
+            btnSortear.style.display = 'none'
+        } else if (gerarNumero < 6) {
+            resPos.style.display = 'block'
+            premio.innerText = '10% de desconto na sua próxima compra,'
+            btnSortear.style.display = 'none'
+        } else if (gerarNumero < 7) {
+            resPos.style.display = 'block'
+            premio.innerText = 'uma camisa exclusiva,'
+            btnSortear.style.display = 'none'
         } else {
-            alert('Você não ganhou')
+            resPos.style.display = 'none'
+            resNeg.style.display = 'block'
+            btnSortear.style.display = 'none'
         }
+
+        btnConfirmar.style.display = 'block'
+        btnConfirmar.addEventListener('click', function() {
+            form.submit()
+        })
     })
 })

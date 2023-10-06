@@ -12,6 +12,7 @@ body {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 24px;
 }
 .container h1 {
   font-family: 'Nunito', sans-serif;
@@ -24,7 +25,7 @@ body {
   text-align: center;
 }
 #form-cadastro {
-  width: 600px;
+  max-width: 100%;
   margin: 0 auto;
 }
 #form-cadastro label,
@@ -57,10 +58,35 @@ button {
 button:hover {
   background-color: #4a63db;
 }
+.sorteio {
+  display: none;
+  margin-top: 24px;
+}
 .sorteio p {
   font-size: 1.5em;
   padding: 16px 0;
 }
 .sorteio .material-symbols-outlined {
   margin: 0 8px;
+}
+.sorteio #resultado-negativo {
+  display: none;
+}
+.sorteio #resultado-positivo {
+  display: none;
+}
+.sorteio #btn-confirmar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+    padding: 0;
+  }
+  .container h1 {
+    font-size: 2em;
+  }
+  .sorteio p {
+    font-size: 1em;
+  }
 }
